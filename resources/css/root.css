@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'), url('/resources/fonts/Ubuntu-LightItalic.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url('/resources/fonts/Ubuntu-Italic.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'), url('/resources/fonts/Ubuntu-MediumItalic.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'),  url('/resources/fonts/Ubuntu-BoldItalic.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Ubuntu Light'), local('Ubuntu-Light'), url('/resources/fonts/Ubuntu-Light.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),  url('/resources/fonts/Ubuntu-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Ubuntu Medium'), local('Ubuntu-Medium'),  url('/resources/fonts/Ubuntu-Medium.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('/resources/fonts/Ubuntu-Bold.ttf') format('ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    width: 100% !important;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /*overscroll-behavior-x: none;*/
+}
+#root{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+.container{
+    margin: 0 auto;
+    height: 100%;
+}
+@media (max-width: 575.98px) {
+    .container{
+        width: 100%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container{
+        width: 540px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container{
+        width: 720px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container{
+        width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+}
